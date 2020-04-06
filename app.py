@@ -7,8 +7,9 @@ api = PokeAPI()
 
 @app.route('/')
 def index():
-    pokemon = api.getPokemon(randrange(152))
+    pokemon = api.getPokemon(randrange(807))
     return render_template('index.html', pokemon=pokemon)
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
