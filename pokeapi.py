@@ -33,7 +33,7 @@ class PokeAPI(object):
             'location_area_encounters':data.get('location_area_encounters'),      
             'moves': str(random.sample(name_moves, k=5)).strip('[]'),
             'abilities' : str(name_abilities).strip('[]'),
-            'held_items': str(name_items).strip('[]'),
+            'items': str(name_items).strip('[]'),
             'type': data.get('species', {}).get('url'),
             'image': data.get('sprites', {}).get('front_default')
         }
